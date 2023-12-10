@@ -1,0 +1,148 @@
+@import url(./reset.css);
+
+:root{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #272B33;
+}
+
+.content{
+    padding: 1.6rem;
+}
+
+.title{
+    color: #fff;
+    font-size: 3.2rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.characters{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.character{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    color: #fff;
+
+    background-color: #3C3E44;
+
+    margin: .8rem;
+
+    border-radius: 1rem;
+}
+
+.character__logo{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.character__details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 0 2rem 1.6rem;
+}
+
+.text-gray{
+    color: #9E9E9E;
+}
+
+.text-paragraph{
+    font-size: 2rem;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.pagination button {
+    padding: .4rem .8rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #6c79db;
+    border: none;
+    border-radius: 1.6rem;
+}
+
+.goTop{
+    position: fixed;
+    width: 4rem;
+    height: 4rem;
+    background-color: #A9A9A9;
+    bottom: 1rem;
+    right: 2.4rem;
+    border-radius: 100%;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 4rem;
+    color: #6c79db;
+    
+    font-size: 2.5rem;
+}
+
+.footer{
+    padding: 0 0 2rem 0;
+    margin: -1.6rem 0 0 0;
+}
+
+.footer__text{
+    text-align: center;
+    color: #fff;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: .8rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b535f6;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff00e5;
+}
+
+@media only screen and (min-width: 768px){
+    .title{
+        font-size: 6.4rem;
+    }
+    .characters{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .character{
+        flex-direction: row;
+    }
+    
+    .character__logo{
+        max-width: 40%;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .character__details{
+        padding: 0 0 0 1.6rem;
+    }
+}
